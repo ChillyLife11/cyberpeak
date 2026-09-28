@@ -2311,4 +2311,7 @@ body.is-locked {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+  .hero__title {
+    max-width: 300px;
+  }
 }
