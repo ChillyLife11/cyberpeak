@@ -18,11 +18,11 @@
 				</a>
 				<nav class="header__nav">
 					<ul class="header__menu">
-						<li><a href="#">Продукты</a></li>
-						<li><a href="#">Техническая поддержка</a></li>
-						<li><a href="#">Партнеры</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">О компании</a></li>
+						<li><a href="#architecture">Продукты</a></li>
+						<li><a href="#support">Техническая поддержка</a></li>
+						<li><a href="#trust">Партнеры</a></li>
+						<li><a href="#press">Новости</a></li>
+						<li><a href="#about">О компании</a></li>
 					</ul>
 					<a href="#demo" class="header__nav-btn primary-btn">Запросить демо</a>
 				</nav>
@@ -46,17 +46,18 @@
 						<span>Платформа</span> защиты данных «Спектр»
 					</h1>
 					<p class="hero__subtitle">Защита всех данных из одного окна</p>
-					<p class="hero__lead">Получите бесплатную демо-версию на 30 дней</p>
+					<!-- <p class="hero__lead">Получите бесплатную демо-версию на 30 дней</p> -->
 					<a href="#demo" class="hero__btn primary-btn">Получить Демо-версию</a>
 				</div>
 				<div class="hero__img">
 					<img src="./img/hero-img.webp" alt="">
 				</div>
+				<a href="#architecture" class="hero__more">Смотреть далее</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="platform section-pb">
+	<!-- <section class="platform section-pb">
 		
 		<div class="wrapper">
 			<div class="platform__content">
@@ -80,46 +81,53 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="architecture section-pt section-pb section-gradient">
+	<section id="architecture" class="architecture section-pt section-pb section-gradient">
 		<div class="wrapper">
-			<h2 class="architecture__title section-title">Архитектура «Спектра»</h2>
-			<div class="architecture__cards swiper">
-				<div class="architecture__track swiper-wrapper">
-					<article class="architecture__card swiper-slide">
-						<img src="./img/icons/architector.svg" alt="" width="24" height="28">
-						<h3 class="architecture__card_name">СПЕКТР | <b>DCAP</b></h3>
-						<p class="architecture__card_text">Система контроля и управления правами доступа к данным</p>
-						<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
-					</article>
-					<article class="architecture__card swiper-slide">
-						<img src="./img/icons/architector.svg" alt="" width="24" height="28">
-						<h3 class="architecture__card_name">СПЕКТР | <b>МАРКЕР</b></h3>
-						<p class="architecture__card_text">Маркировка документов сотрудниками с сохранением меток внутри файла</p>
-						<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
-					</article>
-					<article class="architecture__card swiper-slide">
-						<img src="./img/icons/architector.svg" alt="" width="24" height="28">
-						<h3 class="architecture__card_name">СПЕКТР | <b>ПОРТАЛ</b></h3>
-						<p class="architecture__card_text">Портал согласования и выдачи привилегий по запросу пользователя</p>
-						<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
-					</article>
-					<article class="architecture__card swiper-slide">
-						<img src="./img/icons/architector.svg" alt="" width="24" height="28">
-						<h3 class="architecture__card_name">СПЕКТР | <b>ПОИСК</b></h3>
-						<p class="architecture__card_text">Быстрый корпоративный поиск по всем хранилищам данных</p>
-						<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
-					</article>
-					<article class="architecture__card swiper-slide">
-						<img src="./img/icons/architector.svg" alt="" width="24" height="28">
-						<h3 class="architecture__card_name">СПЕКТР | <b>DAM</b></h3>
-						<p class="architecture__card_text">Решение для полноценной защиты баз данных</p>
-						<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
-					</article>
+			<div class="architecture__content">
+				<div class="architecture__head">
+					<svg class="architecture__chevrons architecture__chevrons--left" width="20" height="42" viewBox="0 0 20 42" fill="none" aria-hidden="true"><path d="M2 2l8 7 8-7M2 12l8 7 8-7M2 22l8 7 8-7M2 32l8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					<h2 class="architecture__title section-title">Архитектура платформы защиты данных «Спектр»</h2>
+					<p class="architecture__text">единая платформа для защиты всех данных компании с возможностью их глубокой классификации на основе автоматических политик и с применением искусственного интеллекта. Получите полное представление о данных, которые у вас хранятся.</p>
+					<svg class="architecture__chevrons architecture__chevrons--right" width="20" height="42" viewBox="0 0 20 42" fill="none" aria-hidden="true"><path d="M2 2l8 7 8-7M2 12l8 7 8-7M2 22l8 7 8-7M2 32l8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</div>
+				<div class="architecture__cards swiper">
+					<div class="architecture__track swiper-wrapper">
+						<article class="architecture__card swiper-slide">
+							<img src="./img/icons/architector.svg" alt="" width="24" height="28">
+							<h3 class="architecture__card_name">СПЕКТР | <b>DCAP</b></h3>
+							<p class="architecture__card_text">Система контроля и управления правами доступа к данным</p>
+							<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
+						</article>
+						<article class="architecture__card swiper-slide">
+							<img src="./img/icons/architector.svg" alt="" width="24" height="28">
+							<h3 class="architecture__card_name">СПЕКТР | <b>МАРКЕР</b></h3>
+							<p class="architecture__card_text">Маркировка документов сотрудниками с сохранением меток внутри файла</p>
+							<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
+						</article>
+						<article class="architecture__card swiper-slide">
+							<img src="./img/icons/architector.svg" alt="" width="24" height="28">
+							<h3 class="architecture__card_name">СПЕКТР | <b>ПОРТАЛ</b></h3>
+							<p class="architecture__card_text">Портал согласования и выдачи привилегий по запросу пользователя</p>
+							<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
+						</article>
+						<article class="architecture__card swiper-slide">
+							<img src="./img/icons/architector.svg" alt="" width="24" height="28">
+							<h3 class="architecture__card_name">СПЕКТР | <b>ПОИСК</b></h3>
+							<p class="architecture__card_text">Быстрый корпоративный поиск по всем хранилищам данных</p>
+							<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
+						</article>
+						<article class="architecture__card swiper-slide">
+							<img src="./img/icons/architector.svg" alt="" width="24" height="28">
+							<h3 class="architecture__card_name">СПЕКТР | <b>DAM</b></h3>
+							<p class="architecture__card_text">Решение для полноценной защиты баз данных</p>
+							<a href="#" class="primary-btn architecture__card_btn">Подробнее</a>
+						</article>
+					</div>
+				</div>
+				<div class="architecture__pagination swiper-pagination"></div>
 			</div>
-			<div class="architecture__pagination swiper-pagination"></div>
 		</div>
 	</section>
 
@@ -295,7 +303,7 @@
 		</div>
 	</section>
 
-	<section class="modular section-pb-2x">
+	<section class="modular" id="about">
 		<div class="wrapper">
 			<div class="modular__card">
 				<div class="modular__head">
@@ -343,19 +351,117 @@
 						<h3 class="mod-item__title">Помощь в расследованиях</h3>
 						<p class="mod-item__text">Система помогает в проведении расследований по линии информационной безопасности. «Спектр» фиксирует и хранит все действия с данными в течение длительного срока, что помогает проводить расследования, даже если инцидент произошёл давно.</p>
 					</article>
-					<article class="mod-item">
-						<img src="./img/icons/module.svg" alt="" width="27" height="33">
-						<h3 class="mod-item__title">Экспертная и техническая поддержка 24 на 7</h3>
-						<p class="mod-item__text">Подключение к платформе защиты данных означает, что наша команда экспертов по кибербезопасности помогает вам максимально адаптировать систему под ваши цели. Мы делимся с вами опытом работы в 50+ крупнейших российских компаниях и готовы реагировать на технические вопросы 24 на 7.</p>
-					</article>
-					<article class="mod-item">
-						<img class="modular__iso" src="./img/module-img.webp" alt="">
-					</article>
+				</div>
+				<div class="modular__support" id="support">
+					<div class="modular__support_info">
+						<img src="./img/icons/module-red.svg" alt="" width="27" height="33">
+						<h3 class="modular__support_title">Экспертная и техническая поддержка 24 на 7</h3>
+						<p class="modular__support_text">Подключение к платформе защиты данных означает, что наша команда экспертов по кибербезопасности помогает вам максимально адаптировать систему под ваши цели. Мы делимся с вами нашим опытом работы в 50+ крупнейших российских компаниях. И готовы реагировать на возникающие технические вопросы 24 на 7.</p>
+					</div>
+					<img class="modular__support_img" src="./img/module-img.webp" alt="">
+				</div>
+				<div class="modular__platform">
+					<h2 class="modular__platform_title section-title">Платформа защиты данных “Спектр”</h2>
+					<p class="modular__platform_hint">Двигайте изображение пальцами влево и вправо</p>
+					<div class="modular__platform_scheme">
+						<picture>
+							<source media="(max-width: 1100px)" srcset="./img/modular-platform-mob.webp" width="600" height="584">
+							<img src="./img/modular-platform.webp" alt="Схема платформы защиты данных «Спектр»: модули Маркер, Портал, Поиск, DCAP и DAM связывают пользователей и администраторов с интернетом, файловыми ресурсами, облачными хранилищами и базами данных" width="1446" height="598" loading="lazy">
+						</picture>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="trust section-pt section-pb" id="trust">
+		<div class="wrapper">
+			<h2 class="trust__title section-title">Нам доверяют</h2>
+			<div class="trust__content">
+				<button class="trust__nav-btn trust__nav-btn--prev" type="button" aria-label="Назад"><svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 2 11l9 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+				<div class="trust__slider swiper">
+					<div class="trust__track swiper-wrapper">
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-1.png" alt="ACCIT" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-2.png" alt="Softline" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-3.png" alt="КРОК" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-4.png" alt="CTI" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-5.png" alt="Angara Security" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-6.png" alt="Систематика" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-7.png" alt="Промышленные инновации (Росатом)" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-8.png" alt="Единство" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-5.png" alt="Angara Security" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-6.png" alt="Систематика" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-7.png" alt="Промышленные инновации (Росатом)" loading="lazy">
+						</div>
+						<div class="trust__item swiper-slide">
+							<img src="./img/trust/logo-8.png" alt="Единство" loading="lazy">
+						</div>
+					</div>
+				</div>
+				<button class="trust__nav-btn trust__nav-btn--next" type="button" aria-label="Вперёд"><svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l9 10-9 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+			</div>
+			<button class="trust__more" type="button">Показать еще</button>
+		</div>
+	</section>
+
+	<section class="demo section-gradient section-pt section-pb" id="demo">
+		<div class="wrapper">
+			<div class="demo__content">
+				<div class="demo__info">
+					<h2 class="demo__title section-title"><span>Демонстрация Спектра</span></h2>
+					<p class="demo__text">Заполните форму, чтобы получить доступ к демо-режиму</p>
+				</div>
+				<img class="demo__art" src="./img/demo-art.webp" alt="">
+				<form class="demo-form" action="#" method="post" data-success="Заявка отправлена!">
+					<div class="demo-form__field">
+						<input class="demo-form__input" type="text" name="name" placeholder="Ваши ФИО" required>
+					</div>
+					<div class="demo-form__field">
+						<input class="demo-form__input" type="email" name="email" placeholder="Ваш email" required>
+					</div>
+					<div class="demo-form__field">
+						<input class="demo-form__input" type="text" name="company" placeholder="Название компании">
+					</div>
+					<div class="demo-form__checks">
+						<label class="demo-form__check">
+							<input class="demo-form__check_input" type="checkbox" name="consent_pd" required>
+							<span class="demo-form__check_box"></span>
+							<span class="demo-form__check_text">Нажимая кнопку, Вы даете <a href="#">Согласие на обработку персональных данных</a></span>
+						</label>
+						<label class="demo-form__check">
+							<input class="demo-form__check_input" type="checkbox" name="consent_ads">
+							<span class="demo-form__check_box"></span>
+							<span class="demo-form__check_text">Нажимая кнопку, Вы даете <a href="#">Согласие на получение новостной и рекламной информации от Общества.</a></span>
+						</label>
+						<p class="demo-form__note">Обработка персональных данных осуществляется в соответствии с <a href="#">Политикой обработки персональных данных.</a></p>
+					</div>
+					<button class="primary-btn demo-form__btn" type="submit">Получить решение в тест</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	
 	<section class="faq section-pt-2x section-pb-2x" id="faq" style="background-image: url('./img/faq-bg.webp');">
 		<div class="wrapper">
 			<h2 class="faq__title section-title">Часто <span>задаваемые вопросы</span></h2>
@@ -404,27 +510,34 @@
 		</div>
 	</section>
 
-	<section class="demo section-gradient section-pt-2x section-pb-2x" id="demo">
+	<section class="sub section-gradient">
+		<img class="sub__pattern sub__pattern--left" src="./img/icons/sub-left-pattern.svg" alt="" width="775" height="412">
+		<img class="sub__pattern sub__pattern--right" src="./img/icons/sub-right-pattern.svg" alt="" width="468" height="412">
 		<div class="wrapper">
-			<div class="demo__content">
-				<div class="demo__info">
-					<img src="./img/platform-logo.png" alt="" class="demo__logo">
-					<h2 class="demo__title section-title"><span>Демонстрация Спектра</span></h2>
-					<p class="demo__text">Это пример текста, создан для примера описания.</p>
+			<div class="sub__content">
+				<div class="sub__info">
+					<h2 class="sub__title">Подпишитесь на рассылку</h2>
+					<p class="sub__text">Чтобы первыми получать все новости и обновления</p>
 				</div>
-				<img class="demo__art" src="./img/demo-art.webp" alt="">
-				<form class="demo-form" action="#" method="post">
-					<div class="demo-form__field">
-						<input class="demo-form__input" type="text" name="name" placeholder="Ваши ФИО" required>
-					</div>
+				<img class="sub__shield" src="./img/icons/sub-shield.svg" alt="" width="101" height="130">
+				<form class="sub__form demo-form" action="#" method="post" data-success="Вы подписаны!">
 					<div class="demo-form__field">
 						<input class="demo-form__input" type="email" name="email" placeholder="Ваш email" required>
 					</div>
-					<div class="demo-form__field">
-						<input class="demo-form__input" type="text" name="company" placeholder="Название компании">
+					<div class="demo-form__checks">
+						<label class="demo-form__check">
+							<input class="demo-form__check_input" type="checkbox" name="consent_pd" required>
+							<span class="demo-form__check_box"></span>
+							<span class="demo-form__check_text">Нажимая кнопку, Вы даете <a href="#">Согласие на обработку персональных данных</a></span>
+						</label>
+						<label class="demo-form__check">
+							<input class="demo-form__check_input" type="checkbox" name="consent_ads">
+							<span class="demo-form__check_box"></span>
+							<span class="demo-form__check_text">Нажимая кнопку, Вы даете <a href="#">Согласие на получение новостной и рекламной информации от Общества.</a></span>
+						</label>
+						<p class="demo-form__note">Обработка персональных данных осуществляется в соответствии с <a href="#">Политикой обработки персональных данных.</a></p>
 					</div>
-					<p class="demo-form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
-					<button class="primary-btn demo-form__btn" type="submit">Получить решение в тест</button>
+					<button class="primary-btn demo-form__btn" type="submit">Подписаться</button>
 				</form>
 			</div>
 		</div>

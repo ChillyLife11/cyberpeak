@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    const anchors = document.querySelectorAll('[data-anchor]');
+	if (anchors.length > 0) {
+		anchors.forEach(anchor => anchor.addEventListener('click', e => {
+			e.preventDefault();
+			window.scrollTo({
+				left: 0,
+				top: document.querySelector('#' + anchor.dataset.anchor).offsetTop - 80,
+				behavior: 'smooth'
+			});
+		}));
+	}
+    
     const faqItems = Array.from(document.querySelectorAll('.faq__item'));
 
     const closeFaq = (item) => {
@@ -62,19 +73,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const demoForm = document.querySelector('.demo-form');
-    if (demoForm) {
-        demoForm.addEventListener('submit', e => {
+    document.querySelectorAll('.demo-form').forEach(form => {
+        form.addEventListener('submit', e => {
             e.preventDefault();
-            const btn = demoForm.querySelector('.demo-form__btn');
+            const btn = form.querySelector('.demo-form__btn');
             if (btn) {
                 const original = btn.textContent;
-                btn.textContent = 'Заявка отправлена!';
+                btn.textContent = form.dataset.success || 'Заявка отправлена!';
                 btn.disabled = true;
-                setTimeout(() => { btn.textContent = original; btn.disabled = false; demoForm.reset(); }, 2500);
+                setTimeout(() => { btn.textContent = original; btn.disabled = false; form.reset(); }, 2500);
             }
         });
-    }
+    });
 
     const tabs = document.querySelectorAll('[data-tab]');
     tabs.forEach(tab => {
@@ -112,6 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateOsFades);
     updateOsFades();
 
+    const trustMore = document.querySelector('.trust__more');
+    if (trustMore) {
+        trustMore.addEventListener('click', () => {
+            document.querySelector('.trust__track').classList.add('is-expanded');
+            trustMore.hidden = true;
+        });
+    }
+
     if (window.Swiper) {
         const mobileSlider = (containerSel, paginationSel, options) => {
             const el = document.querySelector(containerSel);
@@ -137,6 +155,34 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileSlider('.architecture__cards', '.architecture__pagination', { slidesPerView: 1.15, spaceBetween: 17 });
         mobileSlider('.capabilities__grid', '.capabilities__pagination', { slidesPerView: 1.15, spaceBetween: 17 });
         mobileSlider('.press__grid', '.press__pagination', { slidesPerView: 1.1, spaceBetween: 17 });
+
+        const trustEl = document.querySelector('.trust__slider');
+        if (trustEl) {
+            const mq = window.matchMedia('(max-width: 1100px)');
+            let sw = null;
+
+            // на десктопе слайдер 4×2, на мобилке — обычная сетка с «Показать еще»
+            const sync = () => {
+                if (!mq.matches && !sw) {
+                    sw = new Swiper(trustEl, {
+                        slidesPerView: 4,
+                        grid: { rows: 2, fill: 'row' },
+                        spaceBetween: 30,
+                        watchOverflow: false,
+                        navigation: {
+                            prevEl: '.trust__nav-btn--prev',
+                            nextEl: '.trust__nav-btn--next',
+                        },
+                    });
+                } else if (mq.matches && sw) {
+                    sw.destroy(true, true);
+                    sw = null;
+                }
+            };
+
+            sync();
+            mq.addEventListener('change', sync);
+        }
 
         const protectEls = Array.from(document.querySelectorAll('.protect__os'));
         const protectHeads = Array.from(document.querySelectorAll('.protect__head'));
