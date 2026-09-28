@@ -141,7 +141,7 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 76px;
+  width: 80px;
   height: 100%;
   background-image: url('../img/icons/button-check-shield.svg');
   background-repeat: no-repeat;
@@ -294,6 +294,9 @@ body {
   padding-bottom: 22px;
   width: 100%;
   max-width: 300px;
+}
+.hero__btn::before {
+  width: 100px;
 }
 .hero__more {
   position: absolute;
@@ -1152,6 +1155,9 @@ body {
   padding-top: 20px;
   padding-bottom: 22px;
 }
+.sub__form .demo-form__btn::before {
+  width: 88px;
+}
 .press {
   padding-top: 60px !important;
 }
@@ -1535,6 +1541,9 @@ body {
 .header__nav-btn {
   display: none;
 }
+.header__nav-btn::before {
+  width: 100px;
+}
 body.is-locked {
   overflow: hidden;
 }
@@ -1712,7 +1721,7 @@ body.is-locked {
     max-width: 100%;
   }
   .hero__title {
-    font-size: 30px;
+    font-size: 32px;
   }
   .hero__title img {
     display: none;
